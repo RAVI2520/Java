@@ -1,0 +1,19 @@
+
+public class RemoveSpacesFromString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s="Hello I am Raviraj Laxman Karande",withoutSpaces="";
+	
+		
+		for(int i=0;i<s.length();i++)
+		{
+			if(s.charAt(i)!=' ')
+				withoutSpaces=withoutSpaces+s.charAt(i);
+				
+		}
+		System.out.println(withoutSpaces);
+	}
+
+}
