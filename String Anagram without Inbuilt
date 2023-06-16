@@ -1,0 +1,36 @@
+
+public class Anagram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+        String str1="Brag";  
+        String str2="Grab";  
+        char l1,l2='\0';
+        int i=0,j=0;
+        boolean anagram=true;
+        String lstr1="",lstr2="";
+        if(str1.length()==str2.length())
+        {
+        for( i=0;i<str1.length();i++)
+        {
+        	l1=(char) ((str1.charAt(i)>='A'&&str1.charAt(i)<='Z')?str1.charAt(i)+32:str1.charAt(i));
+        	
+        	for( j=0;j<str2.length();j++)
+        	{
+        		l2=(char) ((str2.charAt(j)>='A'&&str2.charAt(j)<='Z')?str2.charAt(j)+32:str2.charAt(j));
+        		
+        		if(l1==l2)
+        			break;
+        	}
+        	
+        	if(j==str2.length())
+        		anagram=false;
+        }
+        System.out.println(anagram?"This is anagram String":"This is not anagram String");
+        }
+      
+	
+	}
+
+}
