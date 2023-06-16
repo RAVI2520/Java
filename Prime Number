@@ -1,0 +1,19 @@
+
+public class Prime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	int no=1;
+	boolean prime=true;
+	
+	for(int i=2;i<=no/2;i++)
+	{
+		if(no%2==0)
+			prime=false;
+	}
+  System.out.println( prime?no+" is prime":no+"is not prime");	
+
+	}
+
+}
