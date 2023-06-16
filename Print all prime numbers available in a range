@@ -1,0 +1,23 @@
+
+public class print_all_prime_Numbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int no=100,j=0;
+		boolean prime=true;
+		for(int i=1;i<=no;i++)
+		{
+			prime=true;
+			for( j=2;j<=i/2;j++)
+			{ 
+				if(i%j==0)
+					prime=false;
+			}
+			if(prime) 
+				System.out.println(i);
+				
+		}
+
+	}
+
+}
