@@ -1,0 +1,21 @@
+
+public class Count_punctuation_characters {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//! , . , ' , - , " , ? , ; 
+		int punctuation=0;
+		String s="This is ?golden chance";
+		
+		for(int i=0;i<s.length();i++)
+		{
+		if(s.charAt(i)=='.'||s.charAt(i)=='!'||s.charAt(i)=='-'||s.charAt(i)=='?'||s.charAt(i)=='\'')
+		punctuation++;
+		}
+		
+		
+		System.out.println(punctuation);
+	}
+
+}
