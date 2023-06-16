@@ -1,0 +1,28 @@
+
+public class FindOccuranceOfDuplicateCharacters {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s="Hello I am Raviraj Laxman Karande";
+		String temp=s,temp1="";
+		int i=0,j=0,count=0;
+		for( i=0;i<temp.length();i++)
+		{temp1="";
+			for(j=0;j<temp.length();j++)
+			{
+				if(temp.charAt(i)==temp.charAt(j))
+					count++;
+				else
+					temp1+=temp.charAt(j);
+					
+			}
+			System.out.println(temp.charAt(i)+" "+count);
+			count=0;
+			temp=temp1;
+		}
+		
+
+	}
+
+}
