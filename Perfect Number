@@ -1,0 +1,22 @@
+
+public class PerfectNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int j=27,sum=0;
+		
+		for( j=1;j<=100;j++)
+		{
+			sum=0;
+			for(int i=1;i<=j/2;i++)
+			{
+			if(j%i==0)
+				sum+=i;
+			}
+//		System.out.println(sum+" "+j);
+			if(sum==j)
+				System.out.println(j+" is perfect Number");
+		}
+	}
+
+}
